@@ -9,35 +9,53 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 40px 20px;
             background-color: #ffffff;
             color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: #f5f5f5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex-wrap: wrap;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        .logo-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
             text-align: center;
         }
-        .logo-container {
-            margin-bottom: 10px;
-        }
-        .logo-container img {
-            max-width: 160px;
-            height: auto;
-        }
-        .title {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
         .slogan {
-            font-size: 16px;
+            font-size: 18px;
             font-style: italic;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
-        .section {
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
+        ul {
+            text-align: left;
+            display: inline-block;
         }
         .whatsapp-button {
             display: inline-block;
@@ -54,16 +72,25 @@
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="logo.png" alt="MARIEOPIA logo">
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <div class="logo-title">MARIEOPIA</div>
     </div>
-    <div class="title">MARIEOPIA</div>
+    <nav>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
     <div class="slogan">YOUR BEST DECISION</div>
 
-    <div class="section">
+    <div class="section" id="over-ons">
         <h2>Over ons</h2>
         <p>MARIEOPIA is een professioneel schoonmaakbedrijf dat gespecialiseerd is in:</p>
-        <ul style="text-align:left; display:inline-block;">
+        <ul>
             <li>cleanrooms in alle bouwfasen,</li>
             <li>kantoorruimtes,</li>
             <li>grote woonhuizen.</li>
@@ -72,12 +99,14 @@
         Onze diensten zijn betrouwbaar, efficiënt en afgestemd op de behoeften van iedere klant.</p>
     </div>
 
-    <div class="section">
+    <div class="section" id="contact">
         <h2>Contact</h2>
         <p>📞 Telefoon / WhatsApp: <a href="https://wa.me/31651705843" target="_blank">+31 6 5170 5843</a></p>
         <p>✉️ E-mail: <a href="mailto:info@marieopia.nl">info@marieopia.nl</a></p>
         <p>🌐 Website: marieopia.nl</p>
         <a class="whatsapp-button" href="https://wa.me/31651705843" target="_blank">Stuur ons een bericht</a>
     </div>
+</div>
+
 </body>
 </html>
